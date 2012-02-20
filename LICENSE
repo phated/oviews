@@ -1,37 +1,3 @@
-PROJECTNAME
-========
-
-DESCRIPTION
-
-### Usage ###
-
-```javascript
-require([ 'PROJECTNAME' ], function ( PROJECTNAME ) {
-
-});
-```
-
-### Building ###
-
-Building requires CoffeeScript and UglifyJS be installed
-
-If you are using NPM, install the them with
-
-```
-npm install -g coffee-script uglify-js
-```
-
-The build process generates a minified file named `main.js` in the root of the project.
-The reason for this is that RequireJS and the Dojo Loader look for `main.js` unless otherwise specified.
-This is mainly for cloning this repo directly and not using CPM.
-
-### Change Log ###
-
-2012 02 19 - **Modified For My Use**
-
-* Tweak commonjs-package-template to better suit my needs
-
-### License ###
 The MIT License
 
 Copyright (c) 2012 Phated <blaine@iceddev.com>

@@ -1,2 +1,7 @@
-# Usage
-Explain how to use your library
+### Usage ###
+
+```javascript
+require([ 'PROJECTNAME' ], function ( PROJECTNAME ) {
+
+});
+```
