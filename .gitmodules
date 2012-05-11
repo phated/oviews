@@ -1,0 +1,6 @@
+[submodule "test/vendor/dojo"]
+	path = test/vendor/dojo
+	url = https://github.com/dojo/dojo
+[submodule "test/vendor/util"]
+	path = test/vendor/util
+	url = https://github.com/dojo/util

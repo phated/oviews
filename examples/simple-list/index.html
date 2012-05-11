@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Simple OView List</title>
+    <script src="../../test/vendor/dojo/dojo.js" data-dojo-config="async: true"></script>
+    <script>
+      require({
+        baseUrl: './',
+        packages: [
+          { name: 'dojo', location: '../../test/vendor/dojo' },
+          { name: 'jade', location: '../../test/vendor/jade', main: 'jade' },
+          { name: 'templates', location: './templates' },
+          { name: 'OView', location: '../../lib/js' },
+          { name: 'app', location: '.' }
+        ]
+      }, ['app']);
+    </script>
+  </head>
+  <body>
+    <input id="newListItem" type="text"></input>
+    <button>Add List Item</button>
+    <ul></ul>
+  </body>
+</html>

@@ -1,24 +1,37 @@
-PROJECTNAME
+OViews
 ========
 
-DESCRIPTION
+Views that observe your model for changes and render accordingly
 
 ### Usage ###
 
 ```javascript
-require([ 'PROJECTNAME' ], function ( PROJECTNAME ) {
+require([ 'template/sample-template', 'OView' ], function ( sampleTemplate, OView ) {
+
+  // Your Initial Data (At minimum, an empty array must be passed in)
+  var sampleData = [
+    {id: 0, info: 'Sample Data 0'}
+  ];
+
+  var cssSelector = '#sample-div'
+
+  // Instatiated a new OView
+  var sampleOView = new OView(sampleData, sampleTemplate, cssSelector);
+
+  // I like to return the store so including this module can interact directly with the DataStore
+  return sampleOView.store;
 
 });
 ```
 
 ### Building ###
 
-Building requires CoffeeScript and UglifyJS be installed
+Building requires Grunt and UglifyJS be installed
 
 If you are using NPM, install the them with
 
 ```
-npm install -g coffee-script uglify-js
+npm install -g grunt uglify-js
 ```
 
 The build process generates a minified file named `main.js` in the root of the project.
@@ -26,6 +39,14 @@ The reason for this is that RequireJS and the Dojo Loader look for `main.js` unl
 This is mainly for cloning this repo directly and not using CPM.
 
 ### Change Log ###
+
+2012 05 10 - **Initial OViews Commit - v0.1.0**
+
+* Basic implementation
+* Some test coverage
+* Simple List Example to demonstrate usage
+* Gruntfile for build process (remove build)
+* Jade templates working
 
 2012 02 19 - **Modified For My Use**
 

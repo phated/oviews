@@ -1,8 +1,8 @@
 {
-  "name": "PROJECTNAME",
-  "description": "PROJECTDESC",
+  "name": "OViews",
+  "description": "Views that observe your model for changes and render accordingly",
   "version": "0.1.0",
-  "homepage": "https://github.com/phated/PROJECTNAME",
+  "homepage": "https://github.com/phated/oviews",
   "author": {
     "name": "Phated (Blaine Bublitz)",
     "email": "blaine@iceddev.com",
@@ -25,16 +25,23 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://github.com/phated/PROJECTNAME/raw/master/LICENSE"
+      "url": "http://github.com/phated/oviews/raw/master/LICENSE"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/phated/PROJECTNAME"
+    "url": "https://github.com/phated/oviews"
   },
-  "bugs": "https://github.com/phated/PROJECTNAME/issues",
+  "bugs": "https://github.com/phated/oviews/issues",
   "keywords": [
-    "AMD"
+    "AMD",
+    "Observable",
+    "MVC",
+    "Models",
+    "Views",
+    "Dojo",
+    "Jade",
+    "Live-binding"
   ],
   "dependencies": {},
   "main": "./main"
