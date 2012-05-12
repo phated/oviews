@@ -1,7 +1,9 @@
 OViews
 ========
 
-Views that observe your model for changes and render accordingly
+Views that observe your model for changes and render accordingly.
+
+This project depends on Dojo being included in the project and named 'dojo' in your packages.
 
 ### Usage ###
 
