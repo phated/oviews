@@ -44,7 +44,7 @@
     "Live-binding"
   ],
   "dependencies": {
-    "dojo": ">= 1.6.0"
+    "dojo": ">= 1.7.0"
   },
   "main": "./main"
 }

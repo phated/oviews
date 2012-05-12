@@ -1,6 +1,9 @@
 module.exports = function(grunt) {
 
   grunt.initConfig({
+    lint: {
+      files: ['lib/js/*.js']
+    },
     min: {
       dist: {
         src: ['lib/js/main.js'],
@@ -8,5 +11,8 @@ module.exports = function(grunt) {
       }
     }
   });
+
+  // Default task.
+  grunt.registerTask('default', 'lint min');
 
 };

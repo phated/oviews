@@ -26,12 +26,12 @@ require([ 'template/sample-template', 'OView' ], function ( sampleTemplate, OVie
 
 ### Building ###
 
-Building requires Grunt and UglifyJS be installed
+Building requires Grunt.js be installed
 
 If you are using NPM, install the them with
 
 ```
-npm install -g grunt uglify-js
+npm install -g grunt
 ```
 
 The build process generates a minified file named `main.js` in the root of the project.
