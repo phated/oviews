@@ -10,7 +10,11 @@ define([
     {id: 3, info: 'List Item 3'}
   ];
 
-  var listOView = new OView(listData, listItemTemplate, 'ul');
+  var listOView = new OView({
+    initialData: listData,
+    view: listItemTemplate,
+    selector: 'ul'
+  });
 
-  return listOView.store;
+  return listOView.model;
 });

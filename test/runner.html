@@ -26,24 +26,7 @@
     </script>
 
     <script src="./vendor/dojo/dojo.js" data-dojo-config="async: true"></script>
-    <script>
-      require({
-        baseUrl: './',
-        packages: [
-          { name: 'dojo', location: 'vendor/dojo' },
-          { name: 'doh', location: 'vendor/util/doh' },
-          { name: 'jade', location: 'vendor/jade', main: 'runtime-amd' },
-          { name: 'jadeTemplates', location: 'views/jade' },
-          { name: 'ObservableView', location: '../lib/js' }
-        ]
-      }, [
-        'doh',
-        'test/basic-observable-behavior',
-        'test/jade-templates',
-      ], function(doh){
-        doh.run();
-      });
-    </script>
+    <script src="./runner.js"></script>
 
     <style type="text/css">
       @import "../../dojo/resources/dojo.css";
@@ -206,12 +189,7 @@
     <table id="testLayout" cellpadding="0" cellspacing="0" style="margin: 0;">
       <tr valign="top" height="40">
         <td colspan="2" id="logoBar">
-          <h3 style="margin: 5px 5px 0px 5px; float: left;">D.O.H.: The Dojo Objective Harness</h3>
-          <img src="small_logo.png" height="40" style="margin: 0px 5px 0px 5px; float: right;">
-          <span style="margin: 10px 5px 0px 5px; float: right;">
-            <input type="checkbox" id="audio" name="audio">
-            <label for="audio">sounds?</label>
-          </span>
+          <h3 style="margin: 5px 5px 0px 5px; float: left;">OView Test Harness</h3>
         </td>
       </tr>
       <tr valign="top" height="10">

@@ -10,10 +10,14 @@ define([
     {id: 3, info: 'List Item 3'}
   ];
 
-  var listOView = new OView(listData, function(data){
-    localStorage.data = JSON.stringify(this.store.query({}));
-    return listItemTemplate(data);
-  }, 'ul');
+  var listOView = new OView({
+    initialData: listData,
+    view: function(data){
+      localStorage.data = JSON.stringify(this.model.query({}));
+      return listItemTemplate(data);
+    },
+    selector: 'ul'
+  });
 
-  return listOView.store;
+  return listOView.model;
 });
