@@ -1,0 +1,21 @@
+//- This footer should hidden by default and shown when there are todos
+if(completed > 0 || remaining > 0)
+  footer#footer
+    //- This should be `0 items left` by default
+    span#todo-count
+      strong #{remaining}
+      if(remaining === 1)
+        |  item left
+      else
+        |  items left
+    //- Remove this if you don't implement routing
+    //- ul#filters
+    //-   li
+    //-     a.selected(href="#/") All
+    //-   li
+    //-     a(href="#/active") Active
+    //-   li
+    //-     a(href="#/completed") Completed
+    button#clear-completed Clear completed (#{completed})
+else
+  footer#footer(style="display: none;")

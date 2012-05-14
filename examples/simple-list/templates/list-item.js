@@ -1,1 +1,0 @@
-define(["jade"],function(jade){return function anonymous(locals,attrs,escape,rethrow){var attrs=jade.attrs,escape=jade.escape,rethrow=jade.rethrow,buf=[];with(locals||{}){var interp;buf.push("<li>");var __val__=info;buf.push(escape(null==__val__?"":__val__)),buf.push("</li>")}return buf.join("")}})
