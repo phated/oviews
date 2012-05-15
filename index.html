@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>OViews by phated</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/phated/oviews">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/phated/oviews/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/phated/oviews/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>OViews</h1>
+          <p>Effortlessly bind your Views and Models (Dojo Stores)</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/phated">phated</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>OViews</h1>
+
+<p>Views that observe your model for changes and render accordingly.</p>
+
+<p>This project depends on Dojo being included in the project and named 'dojo' in your packages.</p>
+
+<h3>Usage</h3>
+
+<div class="highlight">
+<pre><span class="nx">require</span><span class="p">([</span> <span class="s1">'template/sample-template'</span><span class="p">,</span> <span class="s1">'OView'</span> <span class="p">],</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">sampleTemplate</span><span class="p">,</span> <span class="nx">OView</span> <span class="p">)</span> <span class="p">{</span>
+
+  <span class="c1">// Your Initial Data (At minimum, an empty array must be passed in)</span>
+  <span class="kd">var</span> <span class="nx">sampleData</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="nx">id</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">info</span><span class="o">:</span> <span class="s1">'Sample Data 0'</span><span class="p">}</span>
+  <span class="p">];</span>
+
+  <span class="kd">var</span> <span class="nx">cssSelector</span> <span class="o">=</span> <span class="s1">'#sample-div'</span>
+
+  <span class="c1">// Instatiated a new OView</span>
+  <span class="kd">var</span> <span class="nx">sampleOView</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">OView</span><span class="p">({</span>
+    <span class="nx">initialData</span><span class="o">:</span> <span class="nx">sampleData</span><span class="p">,</span>
+    <span class="nx">view</span><span class="o">:</span> <span class="nx">sampleTemplate</span><span class="p">,</span>
+    <span class="nx">selector</span><span class="o">:</span> <span class="nx">cssSelector</span>
+  <span class="p">});</span>
+
+  <span class="c1">// I like to return the model (store) so including this module can interact directly with the DataStore</span>
+  <span class="k">return</span> <span class="nx">sampleOView</span><span class="p">.</span><span class="nx">model</span><span class="p">;</span>
+
+<span class="p">});</span>
+</pre>
+</div>
+
+
+<h3>Building</h3>
+
+<p>Building requires Grunt.js be installed</p>
+
+<p>If you are using NPM, install the them with</p>
+
+<pre><code>npm install -g grunt
+</code></pre>
+
+<p>The build process generates a minified file named <code>main.js</code> in the root of the project.
+The reason for this is that RequireJS and the Dojo Loader look for <code>main.js</code> unless otherwise specified.
+This is mainly for cloning this repo directly and not using CPM.</p>
+
+<h3>Change Log</h3>
+
+<p>2012 05 10 - <strong>Initial OViews Commit - v0.1.0</strong></p>
+
+<ul>
+<li>Basic implementation</li>
+<li>Some test coverage</li>
+<li>Simple List Example to demonstrate usage</li>
+<li>Gruntfile for build process (remove build)</li>
+<li>Jade templates working</li>
+</ul><p>2012 02 19 - <strong>Modified For My Use</strong></p>
+
+<ul>
+<li>Tweak commonjs-package-template to better suit my needs</li>
+</ul><h3>License</h3>
+
+<p>The MIT License</p>
+
+<p>Copyright (c) 2012 Blaine Bublitz <a href="mailto:blaine@iceddev.com">blaine@iceddev.com</a></p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    
+  </body>
+</html>
