@@ -37,6 +37,17 @@ module.exports = function(grunt) {
           amd: true,
           dependencies: 'jade'
         }
+      },
+      examples: {
+        src: ['examples/assets/jade/*.jade'],
+        dest: 'examples/assets/templates',
+        options: {
+          compileDebug: true
+        },
+        wrapper: {
+          amd: true,
+          dependencies: 'jade'
+        }
       }
     },
     watch: {
