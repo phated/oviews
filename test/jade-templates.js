@@ -1,7 +1,7 @@
 define([
   'OView',
-  'jadeTemplates/jade1',
-  'jadeTemplates/jade2',
+  'templates/jade1',
+  'templates/jade2',
   'doh'
 ], function(OView, template1, template2, doh){
   doh.register('OViews with Jade Templates', [

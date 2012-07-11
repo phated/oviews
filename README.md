@@ -37,7 +37,7 @@ Building requires Grunt.js be installed
 If you are using NPM, install the them with
 
 ```
-npm install -g grunt
+npm install
 ```
 
 The build process generates a minified file named `main.js` in the root of the project.

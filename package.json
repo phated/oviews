@@ -4,20 +4,20 @@
   "version": "0.2.0",
   "homepage": "https://github.com/phated/oviews",
   "author": {
-    "name": "Phated (Blaine Bublitz)",
+    "name": "Blaine Bublitz",
     "email": "blaine@iceddev.com",
     "web": "https://github.com/phated"
   },
   "maintainers": [
     {
-      "name": "Phated (Blaine Bublitz)",
+      "name": "Blaine Bublitz",
       "email": "blaine@iceddev.com",
       "web": "https://github.com/phated"
     }
   ],
   "contributors": [
     {
-      "name": "Phated (Blaine Bublitz)",
+      "name": "Blaine Bublitz",
       "email": "blaine@iceddev.com",
       "web": "https://github.com/phated"
     }
@@ -43,8 +43,10 @@
     "Jade",
     "Live-binding"
   ],
-  "dependencies": {
-    "dojo": ">= 1.7.0"
+  "devDependencies": {
+    "grunt": "~0.3.11",
+    "grunt-jade": "~0.3.1",
+    "grunt-contrib": "~0.1.1"
   },
-  "main": "./main"
+  "main": "./dist/OViews.js"
 }
